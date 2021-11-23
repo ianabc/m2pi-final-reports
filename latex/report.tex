@@ -1,0 +1,120 @@
+\documentclass[11pt]{report}
+\usepackage{tocloft}
+\usepackage{sectsty}
+%\usepackage{fullpage}
+\usepackage[hidelinks]{hyperref}
+\usepackage[utf8]{inputenc}
+\usepackage{pdfpages}
+\usepackage{multicol}
+\usepackage{tabularx}
+
+\renewcommand{\cftchapleader}{\cftdotfill{\cftdotsep}}
+\renewcommand{\cftchapfont}{\normalfont}
+\renewcommand{\cftchapaftersnum}{}
+\renewcommand{\cftchappresnum}{Team\space}
+\setlength{\cftchapnumwidth}{\widthof{\textbf{Team~99}}}
+
+\renewcommand{\abstractname}{PREFACE}
+
+\title{M2PI 20XX Final Report}
+\author{}
+\date{20XX}
+
+\begin{document}
+
+\newcommand{\mtopi}{$\textit{Math}^\textit{Industry}$~}
+\newcommand{\person}[2]{\textbf{#1}, #2}
+\sectionfont{\centering\sc\MakeLowercase}
+
+\maketitle
+
+\section*{Preface}
+    Discuss program here
+
+\section*{Acknowledgements}
+The \mtopi workshop would not be possible without
+the generous support of our industry partners. In addition to providing us with
+their employees' time and interesting problems for the
+\mtopi participants to tackle, many of the partners
+also contributed data or computing resources that were invaluable.
+
+\noindent\hrulefill
+
+ \begin{tabularx}{\textwidth}{ X X }
+     \uppercase{Company 1} &
+     \uppercase{Company 2} \\
+     \uppercase{Company 3} &
+ \end{tabularx}
+
+\noindent\hrulefill
+
+We gratefully acknowledge the following people for providing mentorship or
+other support to \mtopi teams. Their particular contributions are acknowledged
+in the reports.
+
+\noindent\hrulefill
+
+\begin{multicols}{2}
+    \begin{itemize}
+        \item[] \person{Name 1}{Affiliation 1}
+        \item[] \person{Name 2}{Affiliation 2}
+        \item[] \person{Name 3}{Affiliation 3}
+        \item[] \person{Name 4}{Affiliation 4}
+    \end{itemize}
+\end{multicols}
+
+
+\section*{Organizing Committee}
+
+\begin{multicols}{2}
+    \begin{itemize}
+        \item[] \person{Name 1}{Affiliation 1}
+        \item[] \person{Name 2}{Affiliation 2}
+        \item[] \person{Name 3}{Affiliation 3}
+        \item[] \person{Name 4}{Affiliation 4}
+    \end{itemize}
+\end{multicols}
+
+
+\section*{Instructors}
+
+\begin{multicols}{2}
+    \begin{itemize}
+        \item[] \person{Name 1}{Affiliation 1}
+        \item[] \person{Name 2}{Affiliation 2}
+        \item[] \person{Name 3}{Affiliation 3}
+        \item[] \person{Name 4}{Affiliation 4}
+    \end{itemize}
+\end{multicols}
+
+\section*{Participant List}
+
+\begin{multicols}{2}
+    \begin{itemize}
+        \item[] Name 1
+        \item[] Name 2
+        \item[] Name 3
+        \item[] Name 4
+    \end{itemize}
+\end{multicols}
+
+\tableofcontents
+
+% Complete one \includepdf block for each project
+\includepdf[
+  pages=-,
+  addtotoc={
+    1,
+    chapter,
+    1,
+    {{Author 1,
+      Author 2
+     }
+     \textit{Project Title} \newline
+     Company Name
+    },
+    teamXX
+  }]{originals/team1.pdf}
+
+
+\end{document}
