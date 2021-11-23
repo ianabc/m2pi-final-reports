@@ -1,18 +1,18 @@
-\documentclass[11pt]{m2pi}
+\documentclass[11pt]{report}
 \usepackage{tocloft}
-\include{m2pi_standard_commands}
+\usepackage{sectsty}
+%\usepackage{fullpage}
 \usepackage[hidelinks]{hyperref}
 \usepackage[utf8]{inputenc}
 \usepackage{pdfpages}
 \usepackage{multicol}
 \usepackage{tabularx}
 
-
-%\renewcommand{\cftchapleader}{\cftdotfill{\cftdotsep}}
-%\renewcommand{\cftchapfont}{\normalfont}
-%\renewcommand{\cftchapaftersnum}{}
-%\renewcommand{\cftchappresnum}{Team\space}
-%\setlength{\cftchapnumwidth}{\widthof{\textbf{Team~99}}}
+\renewcommand{\cftchapleader}{\cftdotfill{\cftdotsep}}
+\renewcommand{\cftchapfont}{\normalfont}
+\renewcommand{\cftchapaftersnum}{}
+\renewcommand{\cftchappresnum}{Team\space}
+\setlength{\cftchapnumwidth}{\widthof{\textbf{Team~99}}}
 
 \renewcommand{\abstractname}{PREFACE}
 
@@ -22,77 +22,102 @@
 
 \begin{document}
 
-%\newcommand{\person}[2]{\textbf{#1}, #2}
+\newcommand{\mtopi}{$\textit{Math}^\textit{Industry}$~}
+\newcommand{\person}[2]{\textbf{#1}, #2}
+\sectionfont{\centering\sc\MakeLowercase}
 
 \maketitle
 
-% \begin{center} PREFEACE \end{center}
-% 
-% This is where the text of the preface should go.
-% 
-% \begin{center} ACKNOWLEDGEMENTS \end{center}
-% The \mtopi workshop would not be possible without the generous support of our
-% industry partners. In addition to providing us with their employees' time and
-% interesting problems for the \mtopi participants to tackle, many of the
-% partners also contributed data or computing resources that were invaluable.
-% 
-% \noindent\hrulefill
-% \begin{multicols}{2}
-%     \begin{flushleft}
-%         \person{Name 1}{Affiliation 1}
-% 
-%         \person{Name 2}{Affiliation 2}
-% 
-%         \person{Name 3}{Affiliation 3}
-% 
-%         \person{Name 4}{Affiliation 4}
-%     \end{flushleft}
-% \end{multicols}
-% 
-% \newpage
-% 
-% \begin{center} ORGANIZING COMMITTEE \end{center}
-% \begin{multicols}{2}
-%     \begin{flushleft}
-%         \person{Name 1}{Affiliation 1}
-% 
-%         \person{Name 2}{Affiliation 2}
-% 
-%         \person{Name 3}{Affiliation 3}
-% 
-%         \person{Name 4}{Affiliation 4}
-%     \end{flushleft}
-% \end{multicols}
-% 
-% \vskip 1in
-% 
-% \begin{center} INSTRUCTORS \end{center}
-% \begin{multicols}{2}
-%     \begin{flushleft}
-%         \person{Name 1}{Affiliation 1}
-% 
-%         \person{Name 2}{Affiliation 2}
-% 
-%         \person{Name 3}{Affiliation 3}
-% 
-%         \person{Name 4}{Affiliation 4}
-%     \end{flushleft}
-% \end{multicols}
-% 
-% \newpage
-% 
-% \begin{center} PARTICIPANT LIST \end{center}
-% \begin{multicols}{2}
-%     \begin{flushleft}
-%         Name 1
-% 
-%         Name 2
-% 
-%         Name 3
-% 
-%         Name 4
-%     \end{flushleft}
-% \end{multicols}
+\begin{center} PREFACE \end{center}
+    Discuss program here
+
+\section*{Acknowledgements}
+The \mtopi workshop would not be possible without
+the generous support of our industry partners. In addition to providing us with
+their employees' time and interesting problems for the
+\mtopi participants to tackle, many of the partners
+also contributed data or computing resources that were invaluable.
+
+\noindent\hrulefill
+
+\begin{multicols}{2}
+    \begin{flushleft}
+        \uppercase{Company 1}
+        
+        \uppercase{Company 2}
+     
+        \uppercase{Company 3}
+    \end{flushleft}
+ \end{multicols}
+
+\noindent\hrulefill
+
+We gratefully acknowledge the following people for providing mentorship or
+other support to \mtopi teams. Their particular contributions are acknowledged
+in the reports.
+
+\noindent\hrulefill
+
+\begin{multicols}{2}
+    \begin{flushleft} 
+        \person{Name 1}{Affiliation 1}
+
+        \person{Name 2}{Affiliation 2}
+
+        \person{Name 3}{Affiliation 3}
+
+        \person{Name 4}{Affiliation 4}
+    \end{flushleft}
+\end{multicols}
+
+\newpage
+
+\begin{center} ORGANIZING COMMITTEE \end{center}
+
+\begin{multicols}{2}
+    \begin{flushleft} 
+        \person{Name 1}{Affiliation 1}
+
+        \person{Name 2}{Affiliation 2}
+
+        \person{Name 3}{Affiliation 3}
+
+        \person{Name 4}{Affiliation 4}
+    \end{flushleft}
+\end{multicols}
+
+
+\begin{center} INSTRUCTORS \end{center}
+
+\begin{multicols}{2}
+    \begin{flushleft} 
+        \person{Name 1}{Affiliation 1}
+
+        \person{Name 2}{Affiliation 2}
+
+        \person{Name 3}{Affiliation 3}
+
+        \person{Name 4}{Affiliation 4}
+    \end{flushleft}
+\end{multicols}
+
+\newpage
+
+\begin{center} PARTICIPANT LIST \end{center}
+
+\begin{multicols}{2}
+    \begin{flushleft} 
+        Name 1
+
+        Name 2
+
+        Name 3
+
+        Name 4
+    \end{flushleft}
+\end{multicols}
+
+\newpage
 
 \tableofcontents
 
@@ -111,5 +136,6 @@
     },
     teamXX
   }]{originals/team1.pdf}
+
 
 \end{document}
